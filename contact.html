@@ -1,49 +1,66 @@
-<!DOCTYPE html>
-	<html>
-	<head>
-		<title>About</title>
-		<link rel="stylesheet" type="text/css" href="./css/style.css">
-	</head>
-	<body>
-		<header>
-			<div id="box1">
-				<div id="name">
-					<h1>Perla Showell</h1>
-			</div>	
-			<nav id="tabs">
-				<a href="./index.html"><p>About</p></a>
-				<a href="./portfolio.html"><p class="border">Portfolio</p><a>
-				<a href="./contact.html"><p> Contact</p></a>
-	</header>
-	<div id="center">
-		<section>
-			<div class="line">
-				<h2>Contact</h2>
-			</div>
-			<article>
-				<form method="POST" action="http://formspree.io/perlashowell@gmail.com">
-					<p>Name</p>
-					<textarea id="name-input" name="name" placeholder="What is your name?"></textarea>
-					<p>Email Address</p>
-  					<input type="email" name="email" placeholder="Your email">
-  					<p>Message</p>
-  					<textarea id="message-input" name="message" placeholder="Your message"></textarea>
-  					<button type="submit">Send</button>
-				</form>
-			</article>
-		</section>
-		<aside>
-			<div class="line">
-				<h3>Connect with Me</h3>
-			</div>
-			<div id="widgets">
-			<a href="https://github.com/pshowell/" target="_blank"><div id="github"></div></a>
-			<a href="https://www.linkedin.com/in/perla-showell-31683996/" target="_blank"<<div id="linkedin"></div><a>
-			<a href="https://stackoverflow.com/users/8584990/perla-showell"></div><a>
-			</div>
-		</aside>
-	<footer>
-		<p>&copy;Perla Showell, 2017</p>
-	</footer>
-	</body>
-	</html>
+<!doctype html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Contact | Your Name</title>
+  <link rel="stylesheet" type="text/css" href="./assets/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+
+<body>
+
+  <header id="masthead">
+    <div class="container">
+      <a href="index.html" id="logo">Perla Showell</a>
+      <nav>
+        <a href="index.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div id="main-container" class="container">
+    <section class="main-section">
+      <h1>Contact</h1>
+
+      <form id="contact-form">
+        <ul>
+          <li>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Smith" required="required">
+          </li>
+          <li>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" required="required">
+          </li>
+          <li>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required="required"></textarea>
+          </li>
+        </ul>
+        <input type="submit">
+      </form>
+
+    </section>
+
+    <section class="sidebar">
+      <div id="connect">
+        <h2>Connect with Me</h2>
+
+        <a href="#"><img src="./assets/images/github-128.png" class="social" alt="GitHub" /></a>
+        <a href="#"><img src="./assets/images/linkedin-128.png" class="social" alt="LinkedIn" /></a>
+        <a href="#"><img src="./assets/images/stackoverflow-128.png" class="social" alt="Stack Overflow" /></a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="container">
+      Copyright &copy; 2016 Your Name
+    </div>
+  </footer>
+</body>
+
+</html>
